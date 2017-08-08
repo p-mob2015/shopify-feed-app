@@ -1,0 +1,19 @@
+# bundler state
+/.bundle
+/vendor/bundle/
+/vendor/ruby/
+.c9/*
+.c9revisions/*
+chromedriver.log
+
+# minimal Rails specific artifacts
+db/*.sqlite3
+/db/backups/*
+/log/*
+/tmp/*
+
+# feed
+/files/feed.xml
+
+# database dumps
+/dump/
