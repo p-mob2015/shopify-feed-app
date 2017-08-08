@@ -1,0 +1,8 @@
+= flash[:error]
+- if @api_form.present?
+  = simple_form_for :api, url: admin_path, method: :patch do |f|
+    = f.input :api_key, required: true, input_html: { value: '460554f46a9042727bd219770f9d006a', autocomplete: 'off' }
+    = f.input :password, required: true, input_html: { type: 'password', value: '1d318637850f9a6e01acfd4e80888e56' }
+    = f.input :domain_name, required: true, placeholder: 'kuname.myshopify.com', input_html: { value: 'kuname.myshopify.com' }
+    = f.button :submit, 'Import'
+    %a.btn.btn--link{:href => '/feed.xml'} Show Feed

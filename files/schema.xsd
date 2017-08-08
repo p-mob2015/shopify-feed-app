@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="items">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="item" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:all>
+              <xs:element name="sku" type="attributecategory" minOccurs="1" maxOccurs="1"/>
+              <xs:element name="parent_sku" type="attributecategory" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="multipack_amount" type="xs:integer" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="is_bundle" type="xs:boolean" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="first_category" type="category" minOccurs="1" maxOccurs="1"/>
+              <xs:element name="second_category" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="third_category" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="fourth_category" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="fifth_category" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="variant_group_one" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="variant_group_two" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="variant_group_three" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="variant_group_four" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="variant_group_five" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="variant_group_six" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="variant_group_seven" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="variant_group_eight" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="gtin" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="brand" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="sub_brand" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="model" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="condition" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="promotion" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="product" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="colour" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="size" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="length" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="width" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="height" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="description" type="attributecategorytext" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="unit_amount" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="unit_per_base_price" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="price" type="currencycategory" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="rrp" type="currencycategory" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="shipping_price" type="currencycategory" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="shipping_weight" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="shipping_service" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="shipping_state" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="shipping_country" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="save_amount" type="currencycategory" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="save_percent" type="xs:decimal" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="warranty_period" type="xs:decimal" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="on_promotion" type="xs:boolean" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="promotion_price" type="currencycategory" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="promotion_start_date" type="xs:dateTime" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="promotion_end_date" type="xs:dateTime" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="stock_amount" type="xs:integer" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="stock_available" type="xs:boolean" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="preorder_availability_date" type="xs:dateTime" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="expiration_date" type="xs:dateTime" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="product_popularity" type="xs:decimal" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="user_rating" type="xs:decimal" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="product_margin" type="xs:decimal" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="url" type="urlcategory" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="mobile_url" type="urlcategory" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="image_url" type="urlcategory" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="age_group" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="gender" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="adult" type="xs:boolean" nillable="true" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="shopping_label" type="category" nillable="true" minOccurs="0" maxOccurs="1"/>
+            </xs:all>
+            <xs:anyAttribute processContents="skip"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:anyAttribute processContents="skip"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="attributecategory">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="255"/>
+      <xs:whiteSpace value="collapse"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="urlcategory">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="2000"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="attributecategorytext">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="5000"/>
+      <xs:whiteSpace value="collapse"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="category">
+    <xs:simpleContent>
+      <xs:extension base="attributecategory">
+        <xs:attribute name="url_value" type="xs:string"/>
+        <xs:attribute name="variant_group_name" type="xs:string" use="optional"/>
+        <xs:anyAttribute processContents="skip"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="currencycategory">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="currency" use="optional">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="AED"/>
+              <xs:enumeration value="AFN"/>
+              <xs:enumeration value="ALL"/>
+              <xs:enumeration value="AMD"/>
+              <xs:enumeration value="ANG"/>
+              <xs:enumeration value="AOA"/>
+              <xs:enumeration value="ARS"/>
+              <xs:enumeration value="AUD"/>
+              <xs:enumeration value="AWG"/>
+              <xs:enumeration value="AZN"/>
+              <xs:enumeration value="BAM"/>
+              <xs:enumeration value="BBD"/>
+              <xs:enumeration value="BDT"/>
+              <xs:enumeration value="BGN"/>
+              <xs:enumeration value="BHD"/>
+              <xs:enumeration value="BIF"/>
+              <xs:enumeration value="BMD"/>
+              <xs:enumeration value="BND"/>
+              <xs:enumeration value="BOB"/>
+              <xs:enumeration value="BRL"/>
+              <xs:enumeration value="BSD"/>
+              <xs:enumeration value="BTN"/>
+              <xs:enumeration value="BWP"/>
+              <xs:enumeration value="BYR"/>
+              <xs:enumeration value="BZD"/>
+              <xs:enumeration value="CAD"/>
+              <xs:enumeration value="CDF"/>
+              <xs:enumeration value="CHF"/>
+              <xs:enumeration value="CLP"/>
+              <xs:enumeration value="CNY"/>
+              <xs:enumeration value="COP"/>
+              <xs:enumeration value="CRC"/>
+              <xs:enumeration value="CUC"/>
+              <xs:enumeration value="CUP"/>
+              <xs:enumeration value="CVE"/>
+              <xs:enumeration value="CZK"/>
+              <xs:enumeration value="DJF"/>
+              <xs:enumeration value="DKK"/>
+              <xs:enumeration value="DOP"/>
+              <xs:enumeration value="DZD"/>
+              <xs:enumeration value="EGP"/>
+              <xs:enumeration value="ERN"/>
+              <xs:enumeration value="ETB"/>
+              <xs:enumeration value="EUR"/>
+              <xs:enumeration value="FJD"/>
+              <xs:enumeration value="FKP"/>
+              <xs:enumeration value="GBP"/>
+              <xs:enumeration value="GEL"/>
+              <xs:enumeration value="GGP"/>
+              <xs:enumeration value="GHS"/>
+              <xs:enumeration value="GIP"/>
+              <xs:enumeration value="GMD"/>
+              <xs:enumeration value="GNF"/>
+              <xs:enumeration value="GTQ"/>
+              <xs:enumeration value="GYD"/>
+              <xs:enumeration value="HKD"/>
+              <xs:enumeration value="HNL"/>
+              <xs:enumeration value="HRK"/>
+              <xs:enumeration value="HTG"/>
+              <xs:enumeration value="HUF"/>
+              <xs:enumeration value="IDR"/>
+              <xs:enumeration value="ILS"/>
+              <xs:enumeration value="IMP"/>
+              <xs:enumeration value="INR"/>
+              <xs:enumeration value="IQD"/>
+              <xs:enumeration value="IRR"/>
+              <xs:enumeration value="ISK"/>
+              <xs:enumeration value="JEP"/>
+              <xs:enumeration value="JMD"/>
+              <xs:enumeration value="JOD"/>
+              <xs:enumeration value="JPY"/>
+              <xs:enumeration value="KES"/>
+              <xs:enumeration value="KGS"/>
+              <xs:enumeration value="KHR"/>
+              <xs:enumeration value="KMF"/>
+              <xs:enumeration value="KPW"/>
+              <xs:enumeration value="KRW"/>
+              <xs:enumeration value="KWD"/>
+              <xs:enumeration value="KYD"/>
+              <xs:enumeration value="KZT"/>
+              <xs:enumeration value="LAK"/>
+              <xs:enumeration value="LBP"/>
+              <xs:enumeration value="LKR"/>
+              <xs:enumeration value="LRD"/>
+              <xs:enumeration value="LSL"/>
+              <xs:enumeration value="LTL"/>
+              <xs:enumeration value="LVL"/>
+              <xs:enumeration value="LYD"/>
+              <xs:enumeration value="MAD"/>
+              <xs:enumeration value="MDL"/>
+              <xs:enumeration value="MGA"/>
+              <xs:enumeration value="MKD"/>
+              <xs:enumeration value="MMK"/>
+              <xs:enumeration value="MNT"/>
+              <xs:enumeration value="MOP"/>
+              <xs:enumeration value="MRO"/>
+              <xs:enumeration value="MUR"/>
+              <xs:enumeration value="MVR"/>
+              <xs:enumeration value="MWK"/>
+              <xs:enumeration value="MXN"/>
+              <xs:enumeration value="MYR"/>
+              <xs:enumeration value="MZN"/>
+              <xs:enumeration value="NAD"/>
+              <xs:enumeration value="NGN"/>
+              <xs:enumeration value="NIO"/>
+              <xs:enumeration value="NOK"/>
+              <xs:enumeration value="NPR"/>
+              <xs:enumeration value="NZD"/>
+              <xs:enumeration value="OMR"/>
+              <xs:enumeration value="PAB"/>
+              <xs:enumeration value="PEN"/>
+              <xs:enumeration value="PGK"/>
+              <xs:enumeration value="PHP"/>
+              <xs:enumeration value="PKR"/>
+              <xs:enumeration value="PLN"/>
+              <xs:enumeration value="PYG"/>
+              <xs:enumeration value="QAR"/>
+              <xs:enumeration value="RON"/>
+              <xs:enumeration value="RSD"/>
+              <xs:enumeration value="RUB"/>
+              <xs:enumeration value="RWF"/>
+              <xs:enumeration value="SAR"/>
+              <xs:enumeration value="SBD"/>
+              <xs:enumeration value="SCR"/>
+              <xs:enumeration value="SDG"/>
+              <xs:enumeration value="SEK"/>
+              <xs:enumeration value="SGD"/>
+              <xs:enumeration value="SHP"/>
+              <xs:enumeration value="SLL"/>
+              <xs:enumeration value="SOS"/>
+              <xs:enumeration value="SPL"/>
+              <xs:enumeration value="SRD"/>
+              <xs:enumeration value="STD"/>
+              <xs:enumeration value="SVC"/>
+              <xs:enumeration value="SYP"/>
+              <xs:enumeration value="SZL"/>
+              <xs:enumeration value="THB"/>
+              <xs:enumeration value="TJS"/>
+              <xs:enumeration value="TMT"/>
+              <xs:enumeration value="TND"/>
+              <xs:enumeration value="TOP"/>
+              <xs:enumeration value="TRY"/>
+              <xs:enumeration value="TTD"/>
+              <xs:enumeration value="TVD"/>
+              <xs:enumeration value="TWD"/>
+              <xs:enumeration value="TZS"/>
+              <xs:enumeration value="UAH"/>
+              <xs:enumeration value="UGX"/>
+              <xs:enumeration value="USD"/>
+              <xs:enumeration value="UYU"/>
+              <xs:enumeration value="UZS"/>
+              <xs:enumeration value="VEF"/>
+              <xs:enumeration value="VND"/>
+              <xs:enumeration value="VUV"/>
+              <xs:enumeration value="WST"/>
+              <xs:enumeration value="XAF"/>
+              <xs:enumeration value="XCD"/>
+              <xs:enumeration value="XDR"/>
+              <xs:enumeration value="XOF"/>
+              <xs:enumeration value="XPF"/>
+              <xs:enumeration value="YER"/>
+              <xs:enumeration value="ZAR"/>
+              <xs:enumeration value="ZMK"/>
+              <xs:enumeration value="ZWD"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>
